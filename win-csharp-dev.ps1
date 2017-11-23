@@ -25,12 +25,16 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/in
 
 PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
 
-choco install jdk8  jre8 -y | Out-File  -Append  $logfile
-choco install androidstudio -y	| Out-File  -Append   $logfile
+choco install visualstudio2017professional
+choco install dotnet4.7.1  # should be dotnetcore maybe?
+choco install git
 
+# misc
 choco install notepadplusplus atom 7zip -y | Out-File  -Append   $logfile
 choco install firefox  -y  | Out-File  -Append   $logfile
-# optional install slack
-choco install slack	| Out-File  -Append   $logfile
+
+# optional install dropbox & slack
+choco install dropbox  -y  | Out-File  -Append   $logfile
+choco install slack  -y  | Out-File  -Append   $logfile
 
 Write-Host Install results in $logfile
