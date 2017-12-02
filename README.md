@@ -7,11 +7,13 @@ Or use them on local Windows Operating Systems installs.
 * Azure Compute VM 
 * etc.
 
+All scripts are intended as a starting point, you may add or remove what you wish.
+
 ## Windows configuration powershell scripts
 
 Chocolatey is the package management software that should have been distributed with
 windows from the beginning.  It is a less complete version of the package managers  
-found in Linux distributions. 
+found in Linux distributions.    
 
 All of these scripts first confirm that they are to be run.  Then they download and 
 install [Chocolatey](https://chocolatey.org/install) Please inspect the 
